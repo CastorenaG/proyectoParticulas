@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>901</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">alternate-background-color: rgb(136, 136, 136);</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Agregar</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>Particulas</string>
+          </property>
+          <widget class="QLineEdit" name="id_lineEdit">
+           <property name="geometry">
+            <rect>
+             <x>50</x>
+             <y>20</y>
+             <width>81</width>
+             <height>20</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QSpinBox" name="velocidad_spinBox">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>220</y>
+             <width>39</width>
+             <height>20</height>
+            </rect>
+           </property>
+           <property name="maximum">
+            <number>100</number>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="mostrar_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>730</x>
+             <y>450</y>
+             <width>91</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Mostrar</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_6">
+           <property name="geometry">
+            <rect>
+             <x>20</x>
+             <y>220</y>
+             <width>45</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Velocidad</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="agregar_inicio_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>200</x>
+             <y>450</y>
+             <width>111</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Agrega Inicio</string>
+           </property>
+          </widget>
+          <widget class="QLabel" name="label_7">
+           <property name="geometry">
+            <rect>
+             <x>30</x>
+             <y>20</y>
+             <width>16</width>
+             <height>16</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="agregar_final_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>460</x>
+             <y>450</y>
+             <width>101</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Agrega Final</string>
+           </property>
+          </widget>
+          <widget class="QPlainTextEdit" name="salida">
+           <property name="geometry">
+            <rect>
+             <x>160</x>
+             <y>10</y>
+             <width>681</width>
+             <height>431</height>
+            </rect>
+           </property>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_2">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>260</y>
+             <width>101</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Colores RGB</string>
+           </property>
+           <widget class="QLabel" name="label">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>19</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Red</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="red_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>20</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>255</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_2">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>29</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Green</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="green_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>50</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>255</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_3">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>80</y>
+              <width>20</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Blue</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="blue_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>80</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>255</number>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_3">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>121</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Origenes</string>
+           </property>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>41</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Origen X</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="origenx_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>20</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-left-color: rgb(47, 128, 237);
+gridline-color: rgb(176, 196, 237);
+selection-background-color: rgb(85, 170, 255);</string>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_9">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>41</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Origen Y</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="origenY_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>50</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_4">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>130</y>
+             <width>120</width>
+             <height>80</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Destinos</string>
+           </property>
+           <widget class="QLabel" name="label_4">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>20</y>
+              <width>45</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Destino X</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="label_5">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>45</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Destino Y</string>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="destinox_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>20</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+           </widget>
+           <widget class="QSpinBox" name="destinoy_spinBox">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>50</y>
+              <width>39</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QGroupBox" name="groupBox_5">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>390</y>
+             <width>91</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="title">
+            <string>Ordenar por:</string>
+           </property>
+           <widget class="QPushButton" name="id_pushButton">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>20</y>
+              <width>75</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>ID</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="distancia_pushButton">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>50</y>
+              <width>75</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Distancia</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="velocidad_pushButton">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>80</y>
+              <width>75</width>
+              <height>23</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Velocidad</string>
+            </property>
+           </widget>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Tabla</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="3">
+         <widget class="QTableWidget" name="tabla"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLineEdit" name="buscar_lineEdit">
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>ID de la particula</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="buscar_pushButton">
+          <property name="text">
+           <string>Buscar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QPushButton" name="mostrar_tabla_pushButton">
+          <property name="text">
+           <string>Mostrar</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Grafico</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="dibujar">
+          <property name="text">
+           <string>Dibujar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1" rowspan="5">
+         <widget class="QGraphicsView" name="graphicsView"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QPushButton" name="get_particulas_pushButton">
+          <property name="text">
+           <string>Mostrar solo (X, Y)</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QPushButton" name="particulas_cercanas_pushButton">
+          <property name="text">
+           <string>Particulas mas cercanas</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QPushButton" name="limpiar">
+          <property name="text">
+           <string>Limpiar</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>Algoritmos</string>
+          </property>
+          <widget class="QPushButton" name="Djikstra_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>20</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Djikstra</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Prim_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>50</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Prim</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="Kruskal_pushButton">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>80</y>
+             <width>101</width>
+             <height>23</height>
+            </rect>
+           </property>
+           <property name="text">
+            <string>Kruskal</string>
+           </property>
+          </widget>
+          <widget class="QPlainTextEdit" name="algoritmos_plainTextEdit">
+           <property name="geometry">
+            <rect>
+             <x>10</x>
+             <y>130</y>
+             <width>111</width>
+             <height>241</height>
+            </rect>
+           </property>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>901</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuParticulas">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="actionAbrir"/>
+    <addaction name="actionGuardar"/>
+   </widget>
+   <addaction name="menuParticulas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAbrir">
+   <property name="text">
+    <string>Abrir</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionGuardar">
+   <property name="text">
+    <string>Guardar</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
